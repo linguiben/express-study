@@ -1,0 +1,258 @@
+[root@JupiterSo ~]# docker inspect mysql
+[
+    {
+        "Id": "60b78af04220eda45abcad64637b992c263d37fd919db298ef6a473fa533d524",
+        "Created": "2023-10-19T06:06:58.860834091Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mysqld"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 1513,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-03-18T13:28:27.335402888Z",
+            "FinishedAt": "2024-03-18T13:27:41.238618681Z"
+        },
+        "Image": "sha256:36ef9f544add92c11b93eeacf14dc3f3363a393d075c3be07434499ff46067d6",
+        "ResolvConfPath": "/var/lib/docker/containers/60b78af04220eda45abcad64637b992c263d37fd919db298ef6a473fa533d524/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/60b78af04220eda45abcad64637b992c263d37fd919db298ef6a473fa533d524/hostname",
+        "HostsPath": "/var/lib/docker/containers/60b78af04220eda45abcad64637b992c263d37fd919db298ef6a473fa533d524/hosts",
+        "LogPath": "",
+        "Name": "/mysql",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": [
+            "f64e5c458cd9ce10a4567622344af098380cf58867bac44a444a923738c94d62"
+        ],
+        "HostConfig": {
+            "Binds": [
+                "/data/mysql:/var/lib/mysql:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "none",
+                "Config": {}
+            },
+            "NetworkMode": "data_default",
+            "PortBindings": {
+                "3306/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "3306"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "always",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": [],
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "host",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/aa472c104a5a1f15662d74bf2baa4bb2b65a11617f907016ecfbd1e698305d9d-init/diff:/var/lib/docker/overlay2/c3711bdfc727ae0358cfccb572ccec05cda8a7db94773a9a20ed6dc72c81d53c/diff:/var/lib/docker/overlay2/ac4dde0f77e118350394bc184fe04dc6da478748c3d4fa8c773748e68df5740c/diff:/var/lib/docker/overlay2/04174e148023dd9e3e7351f6573853c23399cceedac7eef42c9cb010012a8fac/diff:/var/lib/docker/overlay2/2a798a4a6d4d27ce9653e29a7a10bb506213866953f7e6644b302b63e0dfe4ec/diff:/var/lib/docker/overlay2/3d4e57adac464f886406a92933f58e7206fc498933f7a08f39fa291d829b1c8d/diff:/var/lib/docker/overlay2/0db46f5bfc3ccfc12e0bece98df86ac4ec1e99a8877573e937f0293db9b4fd41/diff:/var/lib/docker/overlay2/802193d8e4ab78b17439a682a922d3515aad458fa200405ad14c655669102fb4/diff:/var/lib/docker/overlay2/3f3f8dfc93559861398e726f2ac95ba9fc8e7d76b749d476b521f7319f4b31eb/diff:/var/lib/docker/overlay2/b27a8f43f47308c6f7027944f28540f4d53637f61bacc122cdb9e04b71327b00/diff:/var/lib/docker/overlay2/659caf0c512a6cc07c19d8824fe6861617a663f7787f63bd842728e652559b54/diff:/var/lib/docker/overlay2/fb144bc0916b0ba59108e5c202487d60a8d5f2293776980dde504762cfa81d73/diff:/var/lib/docker/overlay2/0f95521dda907a491cf46963378708160a65054f26cb7e378a66483b5c6dffe6/diff:/var/lib/docker/overlay2/267a86bdb63754c98c11c526d0b20b7b6a9a711726abdd5ad44ae2c41687fd54/diff:/var/lib/docker/overlay2/96f6a1869dbae8ae29f507840094b1f9208a551a1d023e8e2762f0054a39b510/diff:/var/lib/docker/overlay2/7ad8a3a34f702335758a89d3c373c8de8dc0d9f0dd8dd5a6d20b15f5013a3861/diff",
+                "MergedDir": "/var/lib/docker/overlay2/aa472c104a5a1f15662d74bf2baa4bb2b65a11617f907016ecfbd1e698305d9d/merged",
+                "UpperDir": "/var/lib/docker/overlay2/aa472c104a5a1f15662d74bf2baa4bb2b65a11617f907016ecfbd1e698305d9d/diff",
+                "WorkDir": "/var/lib/docker/overlay2/aa472c104a5a1f15662d74bf2baa4bb2b65a11617f907016ecfbd1e698305d9d/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/data/mysql",
+                "Destination": "/var/lib/mysql",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "60b78af04220",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3306/tcp": {},
+                "33060/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "NAME=mysql",
+                "MYSQL_ROOT_PASSWORD=1q2w3E",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.12",
+                "MYSQL_MAJOR=5.7",
+                "MYSQL_VERSION=5.7.36-1debian10"
+            ],
+            "Cmd": [
+                "mysqld"
+            ],
+            "Image": "registry.cn-hangzhou.aliyuncs.com/cloudm/mysql:winery01v1",
+            "Volumes": {
+                "/var/lib/mysql": {}
+            },
+            "WorkingDir": "/etc/mysql/conf.d",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "0160bf815498d0c16b03ef5856c6d4e6c51003ded619d462a3332828a807a4e3",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "data",
+                "com.docker.compose.project.config_files": "docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/data",
+                "com.docker.compose.service": "mysql",
+                "com.docker.compose.version": "1.29.2"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "384aaee01377d1db5d0cd648e8436820f880a8177355b7efbd23f0fb6b9f4b44",
+            "SandboxKey": "/var/run/docker/netns/384aaee01377",
+            "Ports": {
+                "3306/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "3306"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "3306"
+                    }
+                ],
+                "33060/tcp": null
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "data_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "mysql",
+                        "60b78af04220"
+                    ],
+                    "MacAddress": "02:42:ac:12:00:03",
+                    "NetworkID": "593e0e55e898e49360365f3765a8df2c0b0f2ff0681dc8e08680985bcdda4149",
+                    "EndpointID": "da2ed17b01121e82f04aa59ca89d6b04e426081b6dc56134f3207fac6d715791",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": [
+                        "mysql",
+                        "60b78af04220"
+                    ]
+                }
+            }
+        }
+    }
+]
